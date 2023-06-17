@@ -1,0 +1,58 @@
+﻿@model ASP_GlassClassification.Glass_Classification.ResultModel
+
+<h1>Glass Classification</h1>
+
+<form asp-action="Index" method="post">
+    <div class="form-group">
+        <label for="RI">RI:</label>
+        <input type="text" class="form-control" id="RI" name="RI">
+    </div>
+
+    <div class="form-group">
+        <label for="Na">Na:</label>
+        <input type="text" class="form-control" id="Na" name="Na">
+    </div>
+
+    <div class="form-group">
+        <label for="Mg">Mg:</label>
+        <input type="text" class="form-control" id="Mg" name="Mg">
+    </div>
+
+    <div class="form-group">
+        <label for="Al">Al:</label>
+        <input type="text" class="form-control" id="Al" name="Al">
+    </div>
+
+    <div class="form-group">
+        <label for="Si">Si:</label>
+        <input type="text" class="form-control" id="Si" name="Si">
+    </div>
+
+    <div class="form-group">
+        <label for="K">K:</label>
+        <input type="text" class="form-control" id="K" name="K">
+    </div>
+
+    <div class="form-group">
+        <label for="Ca">Ca:</label>
+        <input type="text" class="form-control" id="Ca" name="Ca">
+    </div>
+
+    <div class="form-group">
+        <label for="Ba">Ba:</label>
+        <input type="text" class="form-control" id="Ba" name="Ba">
+    </div>
+
+    <div class="form-group">
+        <label for="Fe">Fe:</label>
+        <input type="text" class="form-control" id="Fe" name="Fe">
+    </div>
+
+
+	<button type="submit" class="btn btn-primary">Tahmin Yap</button>
+</form>
+@if (Model != null)
+{
+    <h2>Tahmin Sonucu</h2>
+    <p>Type: @Model.Prediction</p>
+}
